@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float nota_1,nota_2,nota_3,nota_4,soma;
+
+    printf("nota 1: ");
+    scanf("%f",&nota_1);
+    printf("nota 2: ");
+    scanf("%f",&nota_2);
+    printf("nota 3: ");
+    scanf("%f",&nota_3);
+    printf("nota 4: ");
+    scanf("%f",&nota_4);
+    soma = (nota_1+nota_2+nota_3+nota_4)/4;
+    printf("a media da nota e: %.2f",soma);
+    return 0;
+
+}
