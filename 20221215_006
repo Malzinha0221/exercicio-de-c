@@ -1,0 +1,19 @@
+"""Faça um Programa que pergunte quanto você ganha por hora 
+e o número de horas trabalhadas no mês. 
+Calcule e mostre o total do seu salário no referido mês.
+"""
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+  float qto_ganha, salario;
+  int horas_trabalhadas;
+  
+  printf("Quanto voce ganha por hora: ");
+  scanf("%f",&qto_ganha);
+  printf("Quantas horas voce trabalha por mes: ");
+  scanf("%d",&horas_trabalhadas);
+  salario = qto_ganha * horas_trabalhadas;
+  printf("voce ganha por mes: R$%.2f", salario);
+    return 0;
+}
