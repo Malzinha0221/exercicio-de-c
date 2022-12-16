@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+  float altura;
+  
+  printf("digite a altura: ");
+  scanf("%f",&altura);
+  printf("seu peso ideal: %.2f", (72.7*altura) - 58);
+    return 0;
+}
