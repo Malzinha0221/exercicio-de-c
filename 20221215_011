@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+  float qto_ganha, salario_bruto, imposto_renda, inss, sindicato, ir, iNSS, sinDICATO;
+  int horas_trabalhadas;
+  imposto_renda = 0.11;
+  inss = 0.08;
+  sindicato = 0.05;
+    printf("Quanto voce ganha por hora: ");
+  scanf("%f",&qto_ganha);
+  printf("Quantas horas voce trabalha por mes: ");
+  scanf("%d",&horas_trabalhadas);
+  salario_bruto = qto_ganha * horas_trabalhadas;
+  printf("voce ganha por mes: R$%.2f", salario_bruto);
+  ir = salario_bruto * imposto_renda;
+  iNSS = salario_bruto * inss;
+  sinDICATO = salario_bruto * sindicato;
+  printf("\n quanto pagou de Imposto de renda: R$%.2f", ir);
+  printf("\n quanto pagou para o INSS: R$%.2f", iNSS);
+  printf("\n quanto pagou para o sindicato: R$%.2f", sinDICATO);
+  printf("\n Salario Líquido: R$%.2f", salario_bruto - ir - iNSS - sinDICATO);
+    return 0;
+}
