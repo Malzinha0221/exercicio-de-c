@@ -26,7 +26,7 @@ int main(int argc, char const *argv[])
     calculo_2 = (primeiro_inteiro*3)+numero_real;
     calculo_3 = numero_real*numero_real*numero_real;
 
-    printf("%d", calculo_1);
+    printf("%.2f", calculo_1);
     printf("\n%.2f", calculo_2);
     printf("\n%.2f", calculo_3);
 
